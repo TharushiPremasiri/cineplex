@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEPLEX</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark grey background */
+            color: white; /* White text */
+            text-align: center;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #444; /* Lighter shade of grey for card background */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+  box-shadow: 0 0 10px 5px rgb(255, 183, 0); /* Add white glow effect on hover */
+  
+}
+        h2 {
+            margin-top: 30px;
+            color: rgb(255, 183, 0);
+        }
+    </style>
+     <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Now Showing!</h2>
+            <p>The highly anticipated movie "Action Hero" is now showing in theaters nationwide. Get your tickets now!</p>
+        </div>
+        <div class="card">
+            <h2>Special Screening</h2>
+            <p>Join us for a special screening of the classic film "Casablanca" this weekend. Limited seats available!</p>
+        </div>
+        <div class="card">
+            <h2>Upcoming Event</h2>
+            <p>Don't miss our upcoming event celebrating the 50th anniversary of "The Godfather." Stay tuned for more details!</p>
+        </div>
+        <div class="card">
+            <h2>Exclusive Premiere</h2>
+            <p>Be the first to see the exclusive premiere of "Sci-Fi Spectacle" at our theater next month. Book your tickets now!</p>
+        </div>
+        <div class="card">
+            <h2>Director's Cut</h2>
+            <p>Experience the director's cut of "Blade Runner" with additional scenes and extended footage. Showing for a limited time only!</p>
+        </div>
+        <div class="card">
+            <h2>Anniversary Celebration</h2>
+            <p>Celebrate the 25th anniversary of "Jurassic Park" with special screenings and themed events throughout the month. Don't miss out!</p>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="images/gold.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
